@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rude Health vs Oatly</title>
+  <title>Jessica y Joanna</title>
   <style>
     :root {
       --bg: #f4f1ea;
@@ -12,13 +12,16 @@
       --muted: #68737d;
       --accent: #3f6b5a;
       --border: #ddd8cf;
-      --winner: #e7f2ec;
     }
 
     * { box-sizing: border-box; }
 
     body {
       margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 32px 18px;
       font-family: Arial, Helvetica, sans-serif;
       background: var(--bg);
@@ -26,139 +29,51 @@
     }
 
     .card {
-      max-width: 760px;
-      margin: auto;
+      max-width: 720px;
+      width: 100%;
       background: var(--card);
       border-radius: 18px;
-      padding: 28px;
+      padding: 56px 40px;
+      text-align: center;
       box-shadow: 0 10px 30px rgba(0,0,0,.08);
     }
 
+    .mark {
+      width: 56px;
+      height: 4px;
+      margin: 0 auto 32px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
     h1 {
-      margin: 0 0 8px;
-      font-size: 30px;
+      margin: 0;
+      font-size: 34px;
+      line-height: 1.35;
     }
 
-    .subtitle {
-      margin: 0 0 24px;
-      color: var(--muted);
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      overflow: hidden;
-      border-radius: 12px;
-    }
-
-    th, td {
-      padding: 13px 12px;
-      border-bottom: 1px solid var(--border);
-      text-align: center;
-    }
-
-    th:first-child,
-    td:first-child {
-      text-align: left;
-      font-weight: 600;
-    }
-
-    th {
-      background: #f7f7f4;
-    }
-
-    .winner {
-      background: var(--winner);
-    }
-
-    .verdict {
-      margin-top: 22px;
-      padding: 18px;
-      border-left: 5px solid var(--accent);
-      background: #f6faf8;
-      border-radius: 10px;
-    }
-
-    .verdict strong {
+    h1 span {
       color: var(--accent);
     }
 
     .note {
-      margin-top: 14px;
+      margin-top: 24px;
       color: var(--muted);
-      font-size: 14px;
+      font-size: 15px;
       line-height: 1.5;
     }
 
     @media (max-width: 600px) {
-      .card { padding: 20px 14px; }
-      h1 { font-size: 24px; }
-      th, td { padding: 10px 7px; font-size: 14px; }
+      .card { padding: 40px 24px; }
+      h1 { font-size: 26px; }
     }
   </style>
 </head>
 <body>
   <main class="card">
-    <h1>Rude Health vs Oatly</h1>
-    <p class="subtitle">Comparación nutricional aproximada por cada 100 ml.</p>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Nutriente</th>
-          <th>Rude Health Oat</th>
-          <th class="winner">Oatly Original / Semi</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Calorías</td>
-          <td>49 kcal</td>
-          <td class="winner">47 kcal</td>
-        </tr>
-        <tr>
-          <td>Grasa</td>
-          <td>2.3 g</td>
-          <td class="winner">1.4 g</td>
-        </tr>
-        <tr>
-          <td>Azúcar</td>
-          <td>4.6 g</td>
-          <td class="winner">3.4 g</td>
-        </tr>
-        <tr>
-          <td>Fibra</td>
-          <td class="winner">0.9 g</td>
-          <td>0.7 g</td>
-        </tr>
-        <tr>
-          <td>Proteína</td>
-          <td>0.5 g</td>
-          <td class="winner">1.1 g</td>
-        </tr>
-        <tr>
-          <td>Calcio</td>
-          <td>No fortificada</td>
-          <td class="winner">120 mg</td>
-        </tr>
-        <tr>
-          <td>Vitamina D, B12 e yodo</td>
-          <td>No fortificada</td>
-          <td class="winner">Fortificada</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <section class="verdict">
-      <strong>Veredicto:</strong> Oatly es la opción nutricionalmente más completa
-      para consumo habitual. Rude Health tiene una lista de ingredientes más corta,
-      pero aporta menos proteína y normalmente no está fortificada.
-    </section>
-
-    <p class="note">
-      Los valores pueden variar según el país y la versión exacta del producto,
-      especialmente entre las versiones Original y Barista.
-    </p>
+    <div class="mark"></div>
+    <h1>Que <span>Jessica y Joanna</span> vean lo que esto puede hacer.</h1>
+    <p class="note">Hecho con Hermes.</p>
   </main>
 </body>
 </html>
